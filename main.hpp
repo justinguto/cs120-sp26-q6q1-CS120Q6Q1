@@ -18,13 +18,6 @@ int  getPrevPrime(int);
 void getTwoValues(int &val1, int &val2)
 {
     // TODO
-    while (true)
-    {
-        cout << "Enter two values (begin < end): ";
-        cin >> val1 >> val2;
-        if (val1 < val2) break;
-    }
-    // TODO
 }
 
 //****************************
@@ -34,13 +27,7 @@ void getTwoValues(int &val1, int &val2)
 int isPrime(int n)
 {
     // TODO
-    if (n < 2) return 0;
-    for (int i = 2; i * i <= n; i++)
-    {
-        if (n % i == 0) return 0;
-    }
-    return 1;
-    // TODO
+    return 0;
 }
 
 //****************************
@@ -50,10 +37,7 @@ int isPrime(int n)
 int getNextPrime(int begin)
 {
     // TODO
-    int p = begin + 1;
-    while (!isPrime(p)) p++;
-    return p;
-    // TODO
+    return 0;
 }
 
 //****************************
@@ -64,8 +48,5 @@ int getNextPrime(int begin)
 int getPrevPrime(int end)
 {
     // TODO
-    int p = end - 1;
-    while (p >= 2 && !isPrime(p)) p--;
-    return (p < 2) ? INT_MIN : p;
-    // TODO
+    return 0;
 }
